@@ -2,7 +2,7 @@
 
 namespace somarkn99\hostInfo\Controllers;
 
-class HostinfoController extends Controller
+class HostInfoController extends Controller
 {
     public function isShellEnabled()
     {

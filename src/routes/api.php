@@ -1,6 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use somarkn99\hostInfo\Controllers\HostinfoController;
+use somarkn99\hostInfo\Controllers\HostInfoController;
 
-Route::get('info', [HostinfoController::class,'index']);
+Route::get('server/info', [HostInfoController::class,'index']);
