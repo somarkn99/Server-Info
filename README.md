@@ -55,7 +55,7 @@ Let's Connect
 
 Hire Me :fire:
 -------
-By the way, I'm available to work independently, feel free to communicate with me in order to transform your project from an idea to reality.
+By the way, I'm available to work as freelancer, feel free to communicate with me in order to transform your project from an idea to reality.
 
 You Can contact me for freelancer job vie email :
 ```
