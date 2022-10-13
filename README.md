@@ -53,6 +53,15 @@ Let's Connect
 - [facebook](https://www.facebook.com/SomarKesen)
 - [instagram](https://www.instagram.com/somar_kn/)
 
+Hire Me :fire:
+-------
+By the way, I'm available to work independently, feel free to communicate with me in order to transform your project from an idea to reality.
+
+You Can contact me for freelancer job vie email :
+```
+freelancer@somar-kesen.com
+```
+
 Security
 --------
 

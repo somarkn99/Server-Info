@@ -15,5 +15,11 @@
             "email": "contact@somar-kesen.com"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/somarkn99/Server-Info"
+        }
+    ],
     "require": {}
 }
