@@ -23,7 +23,7 @@ class HostInfoController extends Controller
     public function get_location($ip_address)
     {
         /*Getting user IP address details with geoplugin.net*/
-        $addr_details = @unserialize(file_get_contents('http://www.geoplugin.net/php.gp?ip='.$ip_address));
+        $addr_details = @unserialize(file_get_contents('http://www.geoplugin.net/php.gp?ip=' . $ip_address));
         return $addr_details;
     }
 
@@ -43,22 +43,22 @@ class HostInfoController extends Controller
     public function check_cpu_count()
     {
 
-            if ($this->isShellEnabled()) {
-                $cpu_count = shell_exec('cat /proc/cpuinfo |grep "physical id" | sort | uniq | wc -l');
-            } else {
-                $cpu_count = 'ERROR EXEC096T';
-            }
+        if ($this->isShellEnabled()) {
+            $cpu_count = shell_exec('cat /proc/cpuinfo |grep "physical id" | sort | uniq | wc -l');
+        } else {
+            $cpu_count = 'ERROR EXEC096T';
+        }
 
         return $cpu_count;
     }
 
     public function check_total_ram()
     {
-            if ($this->isShellEnabled()) {
-                $total_ram = shell_exec("grep -w 'MemTotal' /proc/meminfo | grep -o -E '[0-9]+'");
-            } else {
-                $total_ram = 'ERROR EXEC096T';
-            }
+        if ($this->isShellEnabled()) {
+            $total_ram = shell_exec("grep -w 'MemTotal' /proc/meminfo | grep -o -E '[0-9]+'");
+        } else {
+            $total_ram = 'ERROR EXEC096T';
+        }
         return trim($total_ram);
     }
 
@@ -70,13 +70,13 @@ class HostInfoController extends Controller
     public function format_filesize_kB($kiloBytes)
     {
         if (($kiloBytes / pow(1024, 4)) > 1) {
-            return $kiloBytes / pow(1024, 4) . ' ' .'PB';
+            return $kiloBytes / pow(1024, 4) . ' ' . 'PB';
         } elseif (($kiloBytes / pow(1024, 3)) > 1) {
             return $kiloBytes / pow(1024, 3) . ' ' . 'TB';
         } elseif (($kiloBytes / pow(1024, 2)) > 1) {
             return $kiloBytes / pow(1024, 2) . ' ' . 'GB';
         } elseif (($kiloBytes / 1024) > 1) {
-            return $kiloBytes / 1024 . ' ' .'MB';
+            return $kiloBytes / 1024 . ' ' . 'MB';
         } elseif ($kiloBytes >= 0) {
             return ($kiloBytes / 1) . ' ' . 'KB';
         } else {
@@ -95,7 +95,7 @@ class HostInfoController extends Controller
         } elseif (($bytes / pow(1024, 2)) > 1) {
             return (($bytes / pow(1024, 2))) . ' ' . 'MB';
         } elseif ($bytes / 1024 > 1) {
-            return ($bytes / 1024) . ' ' .'KB';
+            return ($bytes / 1024) . ' ' . 'KB';
         } elseif ($bytes >= 0) {
             return ($bytes) . ' ' . 'bytes';
         } else {
@@ -121,12 +121,12 @@ class HostInfoController extends Controller
 
     public function php_max_upload_size()
     {
-            if (ini_get('upload_max_filesize')) {
-                $php_max_upload_size = ini_get('upload_max_filesize');
-                $php_max_upload_size = $this->format_php_size($php_max_upload_size);
-            } else {
-                $php_max_upload_size = 'N/A';
-            }
+        if (ini_get('upload_max_filesize')) {
+            $php_max_upload_size = ini_get('upload_max_filesize');
+            $php_max_upload_size = $this->format_php_size($php_max_upload_size);
+        } else {
+            $php_max_upload_size = 'N/A';
+        }
 
         return $php_max_upload_size;
     }
