@@ -1,44 +1,25 @@
 {
-  "name": "somarkn99/host-info",
-  "description": "This package provides a set of key information about your server in order to view it to the user.",
-  "type": "library",
-  "require": {
-    "php": ">=8.0",
-    "illuminate/support": ">=5.0"
-  },
-  "license": "MIT",
-  "keywords": [
-    "framework",
-    "laravel",
-    "API",
-    "Host",
-    "Server",
-    "RAM",
-    "CPU"
-  ],
-  "autoload": {
-    "psr-4": {
-      "Somarkn99\\HostInfo\\": "src/"
-    }
-  },
-  "authors": [
-    {
-      "name": "Somar Kesen",
-      "email": "contact@somar-kesen.com"
-    }
-  ],
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/somarkn99/Server-Info"
-    }
-  ],
-  "minimum-stability": "dev",
-  "extra": {
-    "laravel": {
-      "providers": [
-        "Somarkn99\\HostInfo\\HostInfoProvider"
-      ]
-    }
-  }
+    "name": "somarkn99/host-info",
+    "description": "This package provides a set of key information about your server in order to view it to the user.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["framework", "laravel","API","Host","Server","RAM","CPU"],
+    "autoload": {
+        "psr-4": {
+            "Somarkn99\\HostInfo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Somar Kesen",
+            "email": "contact@somar-kesen.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/somarkn99/Server-Info"
+        }
+    ],
+    "require": {}
 }
