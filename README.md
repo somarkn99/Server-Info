@@ -1,10 +1,3 @@
-[![Total Downloads](https://img.shields.io/github/downloads/somarkn99/Server-Info/total.svg)](https://packagist.org/packages/somarkn99/Server-Info)
-[![GitHub stars](https://img.shields.io/github/stars/somarkn99/Server-Info)](https://github.com/somarkn99/Server-Info/stargazers)
-[![GitHub issues](https://img.shields.io/github/issues/Syrian-Open-Source/laravel-short-artisan)](https://github.com/Syrian-Open-Source/laravel-short-artisan/issues)
-[![GitHub forks](https://img.shields.io/github/forks/somarkn99/Server-Info)](https://github.com/somarkn99/Server-Info/network)
-
-![logo](assets/logo.jpg)
-
 # Server Info Package
 
 This package provides a set of key information about your server in order to view it to the user.
@@ -17,6 +10,15 @@ You can install the package via composer:
 composer require somarkn99/host-info
 ```
 
+## Config
+
+copy path to config/app.php:
+
+```php
+Somarkn99\HostInfo\Providers\HostInfoProvider::class
+```
+
+
 Usage
 -------
 After you Install package and upload to you host, you will have this route:
@@ -27,21 +29,21 @@ www.your-domain.com/api/server/info
 
 When you request the endpoint it will return array:
 
-- ✅ Server OS
-- ✅ Server Software
-- ✅ Server IP
-- ✅ Server Port
-- ✅ Server Country
-- ✅ Server City
-- ✅ Server Hostname
-- ✅ Document Root
-- ✅ Total CPUs
-- ✅ Total Ram
-- ✅ PHP Version
-- ✅ PHP Max Upload Size
-- ✅ PHP Max Execution Time
-- ✅ PHP Short Tag
-- ✅ PHP Memory Limit
+- Server_OS
+- Server_Software
+- Server_IP
+- Server_Port
+- Server_Country
+- Server_City
+- Server_Hostname
+- Document Root
+- Total_CPUs
+- Total_Ram
+- PHP_Version
+- PHP_Max_Upload_Size
+- PHP_Max_Execution_Time
+- PHP_Short_Tag
+- PHP_Memory_Limit
 
 Where you can use this ? :thinking:	
 -------
