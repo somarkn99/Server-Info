@@ -1,6 +1,6 @@
 <?php
 
-namespace somarkn99\HostInfo\Providers;
+namespace Somarkn99\HostInfo\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
